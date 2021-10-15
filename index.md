@@ -4,7 +4,7 @@ layout: default
 ---
 
 <h1>Edward FitzGerald's <i>Rubayat of Omar Khayam</i></h1>
-
+<p>All versions of the stanzas from the first five editions</p>
 {% assign editions = '1859,1868,1872,1879,1889' | split: ',' %}
 <table>
 <tr>
