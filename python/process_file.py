@@ -11,6 +11,7 @@ rx_digits = re.compile('\\d')
 dest_folder = os.path.join('..', '_stanzas')
 
 front_matter_template = '''---
+layout: stanza
 edition: {ed}
 stanza: {st}
 ---
