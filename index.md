@@ -1,6 +1,6 @@
 ---
 title: Edward FitzGerald's translation of the Rubayat of Omar Khayam
-layout: default
+layout: index_layout
 ---
 
 <h1>Edward FitzGerald's <i>Rubayat of Omar Khayam</i></h1>

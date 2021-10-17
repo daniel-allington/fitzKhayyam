@@ -22,7 +22,7 @@ title: FitzGerald-Khayyam
 email: daniel.allington@kcl.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   An online archive of the first five editions of Edward FitzGerald's translation
-  of the _Rubayat of Omar Khayyam_.
+  of the <i>Rubayat of Omar Khayyam</i>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://fitzkhayyam.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  daniel-allington
