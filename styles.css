@@ -7,3 +7,11 @@ td {
   text-align: right;
   vertical-align: top;
   }
+
+.verse {
+  font-family: serif;
+}
+
+#v3 {
+  text-indent: 1em;
+}
