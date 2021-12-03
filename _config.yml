@@ -28,7 +28,6 @@ url: "http://fitzkhayyam.netlify.app" # the base hostname & protocol for your si
 github_username:  daniel-allington
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 collections:
