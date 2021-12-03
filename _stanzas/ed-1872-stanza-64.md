@@ -2,12 +2,8 @@
 layout: stanza
 edition: 1872
 stanza: 64
+v1: Strange, is it not? that of the myriads who
+v2: Before us pass'd the door of Darkness through,
+v3: Not one returns to tell us of the Road,
+v4: Which to discover we must travel too.
 ---
-
-Strange, is it not? that of the myriads who
-
-Before us pass'd the door of Darkness through,
-
-Not one returns to tell us of the Road,
-
-Which to discover we must travel too.

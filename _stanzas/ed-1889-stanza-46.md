@@ -2,12 +2,8 @@
 layout: stanza
 edition: 1889
 stanza: 46
+v1: And fear not lest Existence closing your
+v2: Account, and mine, should know the like no more;
+v3: The Eternal Saki from that Bowl has pour'd
+v4: Millions of Bubbles like us, and will pour.
 ---
-
-And fear not lest Existence closing your
-
-Account, and mine, should know the like no more;
-
-The Eternal Saki from that Bowl has pour'd
-
-Millions of Bubbles like us, and will pour.

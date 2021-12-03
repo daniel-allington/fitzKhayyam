@@ -2,12 +2,8 @@
 layout: stanza
 edition: 1872
 stanza: 41
+v1: Perplext no more with Human or Divine,
+v2: To-morrow's tangle to the winds resign,
+v3: And lose your fingers in the tresses of
+v4: The Cypress-slender Minister of Wine.
 ---
-
-Perplext no more with Human or Divine,
-
-To-morrow's tangle to the winds resign,
-
-And lose your fingers in the tresses of
-
-The Cypress-slender Minister of Wine.

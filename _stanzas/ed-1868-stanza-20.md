@@ -2,12 +2,8 @@
 layout: stanza
 edition: 1868
 stanza: 20
+v1: The Palace that to Heav'n his pillars threw,
+v2: And Kings the forehead on his threshold drew--
+v3: I saw the solitary Ringdove there,
+v4: And "Coo, coo, coo," she cried; and "Coo, coo, coo."
 ---
-
-The Palace that to Heav'n his pillars threw,
-
-And Kings the forehead on his threshold drew--
-
-I saw the solitary Ringdove there,
-
-And "Coo, coo, coo," she cried; and "Coo, coo, coo."

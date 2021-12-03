@@ -2,12 +2,8 @@
 layout: stanza
 edition: 1879
 stanza: 93
+v1: Indeed the Idols I have loved so long
+v2: Have done my credit in this World much wrong:
+v3: Have drown'd my Glory in a shallow Cup,
+v4: And sold my reputation for a Song.
 ---
-
-Indeed the Idols I have loved so long
-
-Have done my credit in this World much wrong:
-
-Have drown'd my Glory in a shallow Cup,
-
-And sold my reputation for a Song.

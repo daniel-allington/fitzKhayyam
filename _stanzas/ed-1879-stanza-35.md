@@ -2,12 +2,8 @@
 layout: stanza
 edition: 1879
 stanza: 35
+v1: Then to the Lip of this poor earthen Urn
+v2: I lean'd, the Secret of my Life to learn:
+v3: And Lip to Lip it murmur'd--"While you live,
+v4: "Drink!--for, once dead, you never shall return."
 ---
-
-Then to the Lip of this poor earthen Urn
-
-I lean'd, the Secret of my Life to learn:
-
-And Lip to Lip it murmur'd--"While you live,
-
-"Drink!--for, once dead, you never shall return."

@@ -2,12 +2,8 @@
 layout: stanza
 edition: 1872
 stanza: 91
+v1: Ah, with the Grape my fading life provide,
+v2: And wash the Body whence the Life has died,
+v3: And lay me, shrouded in the living Leaf,
+v4: By some not unfrequented Garden-side.
 ---
-
-Ah, with the Grape my fading life provide,
-
-And wash the Body whence the Life has died,
-
-And lay me, shrouded in the living Leaf,
-
-By some not unfrequented Garden-side.
