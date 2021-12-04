@@ -7,7 +7,7 @@ layout: default
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
-<article>
+<div class = "stanza">
     <h1>{{ page.edition }} edition, stanza {{ page.stanza }}</h1>
     <p class = 'verse'>{{ page.v1 }}</p>
     <p class = 'verse'>{{ page.v2 }}</p>
@@ -30,4 +30,4 @@ layout: default
         <a href = "{{ stanza_after.url }}">{{ page.edition }} edition, stanza {{ stanza_after.stanza }} <i class="fa fa-arrow-right"></i></a>
         {% endif %}
     </p>
-</article>
+</div>

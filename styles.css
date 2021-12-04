@@ -8,18 +8,23 @@ td {
   vertical-align: top;
   }
 
-.h1 {
+h1 {
   font-family: Garamond;
 }
 
-.p {
+p {
   font-family: Garamond;
 }
 
-.a {
+a {
   font-family: Garamond;
 }
 
 #v3 {
   text-indent: 1em;
+}
+
+p footer {
+  font-size: smaller;
+  font-family: sans-serif;
 }
