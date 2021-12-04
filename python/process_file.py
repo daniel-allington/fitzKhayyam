@@ -7,6 +7,7 @@ import numpy as np
 rx_alpha = re.compile('[A-Za-z]')
 rx_nonroman = re.compile('[^IVXLC]')
 rx_digits = re.compile('\\d')
+rx_quote = re.compile('"')
 
 dest_folder = os.path.join('..', '_stanzas')
 
@@ -14,10 +15,10 @@ front_matter_template = '''---
 layout: stanza
 edition: {}
 stanza: {}
-v1: {}
-v2: {}
-v3: {}
-v4: {}
+v1: "{}"
+v2: "{}"
+v3: "{}"
+v4: "{}"
 ---
 '''
 
@@ -32,6 +33,7 @@ def process_file(fp, edition):
     stanzas = [l[i+1:i+5] for i in stanza_number_lines]
     for n, stanza in enumerate(stanzas):
         stanza = [rx_digits.sub('', v) for v in stanza]
+        stanza = [rx_quote.sub('\'', v) for v in stanza]
         with open(
                 os.path.join(
                     dest_folder, 'ed-{ed}-stanza-{st}.md'.format(
