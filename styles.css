@@ -8,8 +8,16 @@ td {
   vertical-align: top;
   }
 
-.verse {
-  font-family: serif;
+.h1 {
+  font-family: Garamond;
+}
+
+.p {
+  font-family: Garamond;
+}
+
+.a {
+  font-family: Garamond;
 }
 
 #v3 {
