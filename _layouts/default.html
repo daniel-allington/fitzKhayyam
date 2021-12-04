@@ -3,18 +3,20 @@
 <!doctype html>
 <html>
     <body>
-        <header>
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-            <nav>
-                <a href="{{ site.baseurl }}/">Index</a>
-                <a href="{{ site.baseurl }}/about">About</a>
-            </nav>
-        </header>
-        {{ content }}
-        <footer>
-            This site is the work of <a href = "https://github.com/daniel-allington">Daniel Allington</a>. 
-            It was created on 15 October 2021, and is very much a work in progress.
-        </footer>
+        <div id = "wrapper">
+            <header>
+                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                <p class="site-description">{{ site.description }}</p>
+                <nav>
+                    <a href="{{ site.baseurl }}/">Index</a>
+                    <a href="{{ site.baseurl }}/about">About</a>
+                </nav>
+            </header>
+            {{ content }}
+            <footer>
+                <p>This site is the work of <a href = "https://github.com/daniel-allington">Daniel Allington</a>. 
+                It was created on 15 October 2021, and is very much a work in progress.</p>
+            </footer>
+        </div>
     </body>
 </html>

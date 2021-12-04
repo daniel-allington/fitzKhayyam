@@ -24,7 +24,16 @@ a {
   text-indent: 1em;
 }
 
-p footer {
+#wrapper {
+  max-width: 350px;
+  margin: auto
+}
+
+#stanza {
+  width: 330px;
+  margin: auto
+}
+
+footer {
   font-size: smaller;
-  font-family: sans-serif;
 }
