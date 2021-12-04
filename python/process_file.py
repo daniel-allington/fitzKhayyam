@@ -8,6 +8,7 @@ rx_alpha = re.compile('[A-Za-z]')
 rx_nonroman = re.compile('[^IVXLC]')
 rx_digits = re.compile('\\d')
 rx_quote = re.compile('"')
+rx_dash = re.compile('--')
 
 dest_folder = os.path.join('..', '_stanzas')
 
@@ -34,6 +35,7 @@ def process_file(fp, edition):
     for n, stanza in enumerate(stanzas):
         stanza = [rx_digits.sub('', v) for v in stanza]
         stanza = [rx_quote.sub('\'', v) for v in stanza]
+        stanza = [rx_dash.sub('&mdash;', v) for v in stanza]
         with open(
                 os.path.join(
                     dest_folder, 'ed-{ed}-stanza-{st}.md'.format(
