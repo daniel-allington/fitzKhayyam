@@ -4,6 +4,7 @@ layout: default
 <head>
     <meta charset="utf-8">
     <title>{{ page.edition }} edition, stanza {{ page.stanza }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <article>
@@ -23,10 +24,10 @@ layout: default
 
     <p>
         {% if stanza_before %}
-        <a href = "{{ stanza_before.url }}"><-- {{ page.edition }} edition, stanza {{ stanza_before.stanza }}</a>
+        <a href = "{{ stanza_before.url }}"><i class="fa fa-arrow-left"></i> {{ page.edition }} edition, stanza {{ stanza_before.stanza }}</a>
         {% endif %}
         {% if stanza_after %}
-        <a href = "{{ stanza_after.url }}">{{ page.edition }} edition, stanza {{ stanza_after.stanza }} --></a>
+        <a href = "{{ stanza_after.url }}">{{ page.edition }} edition, stanza {{ stanza_after.stanza }} <i class="fa fa-arrow-right"></i></a>
         {% endif %}
     </p>
 <article>
