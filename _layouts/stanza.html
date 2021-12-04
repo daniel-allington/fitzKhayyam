@@ -17,10 +17,10 @@ layout: default
     {% assign after = page.stanza | plus: 1 %}
     <p>
     {% if page.stanza > 1 %}
-    Stanza <a href = "{{ site.baseurl }}/stanzas/ed-{{ page.edition }}-stanza-{{ before }}.html">{{ before }}</a>
+    {{ page.edition }} edition, stanza <a href = "{{ site.baseurl }}/stanzas/ed-{{ page.edition }}-stanza-{{ before }}.html">{{ before }}</a>
     {% endif %}
     {% if page.stanza < 100 %}
-    Stanza <a href = "{{ site.baseurl }}/stanzas/ed-{{ page.edition }}-stanza-{{ after }}.html">{{ after }}</a>
+    {{ page.edition }} edition, stanza <a href = "{{ site.baseurl }}/stanzas/ed-{{ page.edition }}-stanza-{{ after }}.html">{{ after }}</a>
     {% endif %}
     </p>
 <article>
