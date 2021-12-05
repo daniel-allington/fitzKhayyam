@@ -28,6 +28,10 @@ a {
   text-indent: 1em;
 }
 
+#parallels p {
+  font-size: unset;
+}
+
 footer p {
   font-size: smaller;
   text-align: left;
