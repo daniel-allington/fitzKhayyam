@@ -18,18 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: FitzGerald-Khayyam
+title: fitzKhayyam
 email: daniel.allington@kcl.ac.uk
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   An online archive of the first five editions of Edward FitzGerald's translation
   of the <i>Rubayat of Omar Khayyam</i>.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://fitzkhayyam.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" 
+url: "http://fitzkhayyam.netlify.app" 
 github_username:  daniel-allington
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 collections:
   stanzas:
     output: true
