@@ -8,4 +8,15 @@ Omar Khayyam (1048-1131) was a Persian scientist and poet. Edward FitzGerald (18
 
 This site was built using [Jekyll](https://github.com/jekyll). The text is that of the WikiSource transcriptions of the [1859](https://en.wikisource.org/wiki/The_Rubaiyat_of_Omar_Khayyam_(tr._Fitzgerald,_1st_edition)/The_Rubaiyat_of_Omar_Khayyam), [1868](https://en.wikisource.org/wiki/The_Rubaiyat_of_Omar_Khayyam_(tr._Fitzgerald,_2nd_edition)), [1872](https://en.wikisource.org/wiki/The_Rubaiyat_of_Omar_Khayyam_(tr._Fitzgerald,_3rd_edition)), [1879](https://en.wikisource.org/wiki/The_Rubaiyat_of_Omar_Khayyam_(tr._Fitzgerald,_4th_edition)), and  [1889](https://en.wikisource.org/wiki/The_Rubaiyat_of_Omar_Khayyam_(tr._Fitzgerald,_5th_edition)) editions (the last of which was posthumous but based on FitzGerald's notes), from which it was extracted using a Python script. As I created the site for teaching purposes, all the code is available on [GitHub](https://github.com/daniel-allington/fitzKhayyam). 
 
-While the intention is eventually to rebuild it using a text corrected by hand, the first priority is to link together revised versions of the same stanzas (which can't be done numerically, as translations of the same stanza often appear in different places in the running order). So far, this has been done for just over a quarter of the stanzas.
+While the intention is eventually to rebuild the site using a text corrected by hand, the first priority is to link together revised versions of the same stanzas. This can't be done numerically, as translations of the same stanza often appear in different places in the running order, and doing it through fuzzy text matching would be error-prone and (given the total size) a case of overkill. So far, this has been done for just over a quarter of the stanzas.
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
