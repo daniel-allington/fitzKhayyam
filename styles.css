@@ -20,6 +20,18 @@ a {
   font-family: Garamond;
 }
 
+a:link {
+  color: teal;
+}
+
+a:visited {
+  color: teal;
+}
+
+a:hover {
+  color: turquoise;
+}
+
 .verse {
   font-size: large;
 }
