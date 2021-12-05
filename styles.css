@@ -20,7 +20,11 @@ a {
   font-family: Garamond;
 }
 
-#v3 {
+.verse {
+  font-size: large;
+}
+
+.v3 {
   text-indent: 1em;
 }
 

@@ -10,15 +10,35 @@ layout: default
 </head>
 <div id = "stanza">
     <h1>{{ page.edition }} edition, stanza {{ page.stanza }}</h1>
-    <p class = 'verse'>{{ page.v1 }}</p>
-    <p class = 'verse'>{{ page.v2 }}</p>
-    <p class = 'verse' id = 'v3'>{{ page.v3 }}</p>
-    <p class = 'verse'>{{ page.v4 }}</p>
-    {% assign same_edition_stanzas = site.stanzas | where: 'edition', page.edition %}
+    <p class = "verse">{{ page.v1 }}</p>
+    <p class = "verse">{{ page.v2 }}</p>
+    <p class = "verse v3">{{ page.v3 }}</p>
+    <p class = "verse">{{ page.v4 }}</p>
 
+    <div id = "parallels">
+        {% assign this_stanza = site.data.parallels | 
+            where: "edition", page.edition | 
+            find: "stanza", page.stanza %}
+        {% assign stanza_id = this_stanza.id %}
+        {% assign parallels = site.data.parallels | 
+            where_exp: "item", "item.edition != page.edition" |
+            where: "id", stanza_id %}
+        {% for parallel in parallels %}
+        {{ parallel.edition }}
+        {% assign parallel_stanza = site.stanzas | 
+            where: "edition", parallel.edition |
+            find: "stanza", parallel.stanza %}
+            <h2>{{ parallel_stanza.edition }} edition, stanza {{ parallel_stanza.stanza }}</h2>
+            <p class = "verse">{{ parallel_stanza.v1 }}</p>
+            <p class = "verse">{{ parallel_stanza.v2 }}</p>
+            <p class = "verse" id = "v3">{{ parallel_stanza.v3 }}</p>
+            <p class = "verse">{{ parallel_stanza.v4 }}</p>
+        {% endfor %}
+    </div>
+
+    {% assign same_edition_stanzas = site.stanzas | where: 'edition', page.edition %}
     {% assign number_before = page.stanza | minus: 1 %}
     {% assign number_after = page.stanza | plus: 1 %}
-
     {% assign stanza_before = same_edition_stanzas | find: 'stanza', number_before %}
     {% assign stanza_after = same_edition_stanzas | find: 'stanza', number_after %}
 
