@@ -24,8 +24,9 @@ a {
   text-indent: 1em;
 }
 
-footer {
+footer p {
   font-size: smaller;
+  text-align: left;
 }
 
 #wrapper {
@@ -33,18 +34,37 @@ footer {
   margin: auto
 }
 
-#stanza {
-  width: 330px;
-  margin: auto
+#header {
+  max-width: 350px;
+}
+
+#back_forward_nav {
+  display: grid;
+  grid-template-columns: 350px;
 }
 
 @media only screen and (min-width: 600px) {
   #wrapper {
-    max-width: 550px;
+    max-width: 600px;
   }
   #stanza {
-    max-width: 500px;
+    max-width: 550px;
     margin: auto;
+  }
+  header {
+    max-width: 600px;
+  }
+  footer p {
+    text-align: center;
+    max-width: 600px;
+  }
+  #back_forward_nav {
+    display: grid;
+    grid-template-columns: 200px 200px;
+  }
+  table {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

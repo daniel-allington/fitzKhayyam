@@ -14,7 +14,6 @@ layout: default
     <p class = 'verse'>{{ page.v2 }}</p>
     <p class = 'verse' id = 'v3'>{{ page.v3 }}</p>
     <p class = 'verse'>{{ page.v4 }}</p>
-    <p><a href = "{{ site.url }}">Back to index</a></p>
     {% assign same_edition_stanzas = site.stanzas | where: 'edition', page.edition %}
 
     {% assign number_before = page.stanza | minus: 1 %}
@@ -23,12 +22,16 @@ layout: default
     {% assign stanza_before = same_edition_stanzas | find: 'stanza', number_before %}
     {% assign stanza_after = same_edition_stanzas | find: 'stanza', number_after %}
 
-    <p>
+    <div id = "back_forward_nav">
         {% if stanza_before %}
-        <a href = "{{ stanza_before.url }}"><i class="fa fa-arrow-left"></i> {{ page.edition }} edition, stanza {{ stanza_before.stanza }}</a>
+        <span class = "back_forward">
+            <a href = "{{ stanza_before.url }}"><i class="fa fa-arrow-left"></i> {{ page.edition }} edition, stanza {{ stanza_before.stanza }}</a>
+        </span>
         {% endif %}
         {% if stanza_after %}
-        <a href = "{{ stanza_after.url }}">{{ page.edition }} edition, stanza {{ stanza_after.stanza }} <i class="fa fa-arrow-right"></i></a>
+        <span class = "back_forward">
+            <a href = "{{ stanza_after.url }}">{{ page.edition }} edition, stanza {{ stanza_after.stanza }} <i class="fa fa-arrow-right"></i></a>
+        </span>
         {% endif %}
-    </p>
+    </div>
 </div>
