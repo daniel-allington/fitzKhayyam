@@ -10,8 +10,6 @@ This site was built using [Jekyll](https://github.com/jekyll). The text is that 
 
 While the intention is eventually to rebuild the site using a text corrected by hand, the first priority is to link together revised versions of the same stanzas. This can't be done numerically, as translations of the same stanza often appear in different places in the running order, and doing it through fuzzy text matching would be error-prone and (given the total size) a case of overkill. So far, this has been done for just over a quarter of the stanzas.
 
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
-
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
