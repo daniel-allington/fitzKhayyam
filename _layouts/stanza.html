@@ -3,11 +3,12 @@ layout: default
 ---
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.edition }} edition, stanza {{ page.stanza }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
-<div class = "stanza">
+<div id = "stanza">
     <h1>{{ page.edition }} edition, stanza {{ page.stanza }}</h1>
     <p class = 'verse'>{{ page.v1 }}</p>
     <p class = 'verse'>{{ page.v2 }}</p>

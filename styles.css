@@ -24,6 +24,10 @@ a {
   text-indent: 1em;
 }
 
+footer {
+  font-size: smaller;
+}
+
 #wrapper {
   max-width: 350px;
   margin: auto
@@ -34,6 +38,21 @@ a {
   margin: auto
 }
 
-footer {
-  font-size: smaller;
+@media only screen and (min-width: 600px) {
+  #wrapper {
+    max-width: 550px;
+  }
+  #stanza {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #wrapper {
+    max-width: 700px;
+  }
+  #stanza {
+    max-width: 550px;
+  }
 }
