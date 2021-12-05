@@ -8,7 +8,7 @@ rx_alpha = re.compile('[A-Za-z]')
 rx_nonroman = re.compile('[^IVXLC]')
 rx_digits = re.compile('\\d')
 rx_quote = re.compile('"')
-rx_dash = re.compile('--')
+rx_dash = re.compile('—|--')
 
 dest_folder = os.path.join('..', '_stanzas')
 
