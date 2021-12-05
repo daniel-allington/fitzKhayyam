@@ -23,7 +23,7 @@ layout: default
             find: "stanza", page.stanza %}
         {% assign stanza_id = this_stanza.id %}
         {% assign parallels = site.data.parallels | 
-            where: "id", stanza_id % |
+            where: "id", stanza_id |
             sort: "edition" %}
         {% assign parallel_count = parallels | size %}
         {% if parallel_count < 2 %}
