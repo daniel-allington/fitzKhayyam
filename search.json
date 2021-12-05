@@ -1,0 +1,17 @@
+---
+---
+[
+  {% for stanza in site.stanzas %}
+    {
+
+      "edition"    : "{{ stanza.edition }}",
+      "stanza"     : "{{ stanza.stanza }}",
+      "url"        : "{{ site.baseurl }}{{ stanza.url }}",
+      "v1"         : "{{ stanza.v1 }}",
+      "v2"         : "{{ stanza.v2 }}",
+      "v3"         : "{{ stanza.v3 }}",
+      "v4"         : "{{ stanza.v4 }}"
+
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
