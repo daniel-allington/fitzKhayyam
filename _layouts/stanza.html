@@ -15,7 +15,9 @@ layout: default
     <p class = "verse v3">{{ page.v3 }}</p>
     <p class = "verse">{{ page.v4 }}</p>
 
-    <div id = "parallels">
+    <button onclick="toggleParallels()">Show/hide parallel stanzas</button>
+
+    <div id = "parallels" style = "display:none">
         {% assign this_stanza = site.data.parallels | 
             where: "edition", page.edition | 
             find: "stanza", page.stanza %}
@@ -55,3 +57,14 @@ layout: default
         {% endif %}
     </div>
 </div>
+
+<script>
+    function toggleParallels() {
+        var x = document.getElementById("parallels");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
