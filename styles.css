@@ -14,7 +14,7 @@ h1 {
   font-weight: 600;
 }
 
-p, a, button, td {
+p, a, button, td, input {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
 }
