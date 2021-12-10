@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
 
 body {
   background-color: seashell;
@@ -9,15 +10,23 @@ td {
   }
 
 h1 {
-  font-family: Garamond;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
 }
 
-p {
-  font-family: Garamond;
+p, a, button, td, input {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
 }
 
-a {
-  font-family: Garamond;
+th {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+.verse {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
 }
 
 a:link {
@@ -85,17 +94,12 @@ footer p {
     padding-left: 5px;
     padding-right: 5px;
   }
+  #index-heading {
+    text-align: center;
+  }
   table {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media only screen and (min-width: 800px) {
-  #wrapper {
-    max-width: 700px;
-  }
-  #stanza {
-    max-width: 550px;
-  }
-}
