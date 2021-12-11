@@ -28,19 +28,20 @@ layout: default
         {% assign parallel_count = parallels | size %}
         {% if parallel_count < 2 %}
             <p>No parallel stanzas identified</p>
+        {% else %}
+            {% for parallel in parallels %}
+                {% assign parallel_stanza = site.stanzas | 
+                    where: "edition", parallel.edition |
+                    find: "stanza", parallel.stanza %}
+                {% if parallel_stanza.edition != page.edition %}
+                    <h2><a href = "{{ parallel_stanza.url }}">{{ parallel_stanza.edition }} edition, stanza {{ parallel_stanza.stanza }}</h2></a>
+                    <p class = "verse">{{ parallel_stanza.v1 }}</p>
+                    <p class = "verse">{{ parallel_stanza.v2 }}</p>
+                    <p class = "verse v3">{{ parallel_stanza.v3 }}</p>
+                    <p class = "verse">{{ parallel_stanza.v4 }}</p>
+                {% endif %}
+            {% endfor %}
         {% endif %}
-        {% for parallel in parallels %}
-            {% assign parallel_stanza = site.stanzas | 
-                where: "edition", parallel.edition |
-                find: "stanza", parallel.stanza %}
-            {% if parallel_stanza.edition != page.edition %}
-                <h2><a href = "{{ parallel_stanza.url }}">{{ parallel_stanza.edition }} edition, stanza {{ parallel_stanza.stanza }}</h2></a>
-                <p class = "verse">{{ parallel_stanza.v1 }}</p>
-                <p class = "verse">{{ parallel_stanza.v2 }}</p>
-                <p class = "verse v3">{{ parallel_stanza.v3 }}</p>
-                <p class = "verse">{{ parallel_stanza.v4 }}</p>
-            {% endif %}
-        {% endfor %}
     </div>
 
     {% assign same_edition_stanzas = site.stanzas | where: 'edition', page.edition %}
